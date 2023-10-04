@@ -3,15 +3,18 @@
 
 <head>
     <title>Jogo de Perguntas e Respostas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Bem-vindo ao Jogo de Perguntas e Respostas!</h1>
-    <p id="pergunta">Qual é a capital do Brasil?</p> <input type="text" id="resposta"> <button
-        onclick="verificarResposta()">Responder</button>
-    <div id="resultado"></div> <img id="imagem" style="display: none;" src="URL_DA_IMAGEM_CORRETA.jpg"
+    <p id="pergunta">Qual é a capital do Brasil?</p> 
+    <input type="text" id="resposta">
+     <button onclick="verificarResposta()">Responder</button>
+    <div id="resultado"></div> 
+    <img id="imagem" style="display: none;" src="Walter_White.png"
         alt="Resposta Correta">
-    <script> function verificarResposta() { var resposta = document.getElementById("resposta").value.toLowerCase(); if (resposta === "brasília") { document.getElementById("resultado").textContent = "Correto! Você acertou!"; document.getElementById("imagem").style.display = "block"; setTimeout(function () { document.getElementById("imagem").style.display = "none"; document.getElementById("resultado").textContent = ""; }, 5000); // A imagem ficará visível por 5 segundos (5000 milissegundos) } else { document.getElementById("resultado").textContent = "Errado. Tente novamente."; } } </script>
+        <script src="main.js"></script>
 </body>
 
 </html>
